@@ -1,4 +1,4 @@
-FROM gitlab-registry.mpcdf.mpg.de/nomad-lab/nomad-fair:1.3.6.dev5+g5fa39fd66
+FROM gitlab-registry.mpcdf.mpg.de/nomad-lab/nomad-fair:1.3.6.dev5
 USER root
 RUN apt-get update
 RUN apt-get -y install git
