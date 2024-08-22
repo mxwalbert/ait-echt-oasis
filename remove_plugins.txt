@@ -1,0 +1,13 @@
+nomad-perovskite-solar-cells-database
+nomad-porous-materials
+nomad-aitoolkit
+nomad-simulations
+pynxtools
+nomad-schema-plugin-run
+nomad-schema-plugin-simulation-workflow
+nomad-normalizer-plugin-bandstructure
+nomad-normalizer-plugin-dos
+nomad-normalizer-plugin-soap
+nomad-normalizer-plugin-spectra
+nomad-normalizer-plugin-system
+nomad-normalizer-plugin-simulation-workflow
