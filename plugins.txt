@@ -1,2 +1,2 @@
 nomad-measurements
-nomad-material-processing
+git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git
