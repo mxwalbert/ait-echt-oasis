@@ -1,4 +1,4 @@
-nomad-perovskite-solar-cells-database
+perovskite_solar_cell_database
 nomad-porous-materials
 nomad-aitoolkit
 nomad-simulations
