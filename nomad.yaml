@@ -10,9 +10,9 @@ north:
   jupyterhub_crypt_key: '978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d'
 
 meta:
-  deployment: 'oasis'
-  deployment_url: 'https://my-oasis.org/api'
-  maintainer_email: 'me@my-oasis.org'
+  deployment: 'ait-echt-oasis'
+  deployment_url: 'localhost/api'
+  maintainer_email: 'echt-oasis@ait.ac.at'
 
 logstash:
   enable: false

@@ -51,7 +51,7 @@ Below are instructions for how to deploy this NOMAD Oasis distribution
     or
 
     ```sh
-    curl -L -o nomad-oasis.zip "https://github.com/mxwalbert/ait-echt-oasis/raw/main/nomad-oasis.zip"
+    curl -L -o nomad-oasis.zip "https://github.com/mxwalbert/ait-echt-oasis/archive/main.zip"
     unzip nomad-oasis.zip
     cd nomad-oasis
     ```
