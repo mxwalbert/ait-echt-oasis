@@ -53,6 +53,7 @@ Below are instructions for how to deploy this NOMAD Oasis distribution
     ```sh
     curl -L -o nomad-oasis.zip "https://github.com/mxwalbert/ait-echt-oasis/archive/main.zip"
     unzip nomad-oasis.zip
+    mv ait-echt-oasis-main/ nomad-oasis/
     cd nomad-oasis
     ```
 
