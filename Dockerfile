@@ -115,8 +115,13 @@ ARG PYTHON_VERSION=3.12
 
 # Install UV
 COPY --from=uv_image /uv /usr/local/bin/uv
-COPY --chown=nomad:${UID} --from=builder /opt/venv /opt/venv
 
+# Writable cache dir for uv (avoid /nonexistent)
+ENV XDG_CACHE_HOME=/app/.cache
+ENV UV_CACHE_DIR=/app/.cache/uv
+RUN mkdir -p /app/.cache/uv && chown -R nomad:${UID} /app/.cache
+
+COPY --chown=nomad:${UID} --from=builder /opt/venv /opt/venv
 COPY --chown=nomad:${UID} scripts/run.sh .
 COPY --chown=nomad:${UID} scripts/run-worker.sh .
 COPY configs/nomad.yaml nomad.yaml
