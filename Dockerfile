@@ -113,7 +113,13 @@ FROM base_final AS final
 
 ARG PYTHON_VERSION=3.12
 
-# Install UV
+# Install git
+USER root
+RUN apt-get update \
+ && apt-get install --yes --quiet --no-install-recommends git \
+ && rm -rf /var/lib/apt/lists/*
+
+# Install uv
 COPY --from=uv_image /uv /usr/local/bin/uv
 
 # Writable cache dir for uv (avoid /nonexistent)
