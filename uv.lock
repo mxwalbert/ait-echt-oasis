@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.10, <3.13"
 resolution-markers = [
     "python_full_version >= '3.12' and sys_platform == 'win32'",
@@ -118,15 +118,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c6/78/7d432127c41b50bccba979505f272c16cbcadcc33645d5fa3a738110ae75/anyio-4.11.0.tar.gz", hash = "sha256:82a8d0b81e318cc5ce71a5f1f8b5c4e63619620b63141ef8c995fa0db95a57c4", size = 219094, upload-time = "2025-09-23T09:19:12.58Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/15/b3/9b1a8074496371342ec1e796a96f99c82c945a339cd81a8e73de28b4cf9e/anyio-4.11.0-py3-none-any.whl", hash = "sha256:0287e96f4d26d4149305414d4e3bc32f0dcd0862365a4bddea19d7a1ec38c4fc", size = 109097, upload-time = "2025-09-23T09:19:10.601Z" },
-]
-
-[[package]]
-name = "anytree"
-version = "2.13.0"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/bc/a8/eb55fab589c56f9b6be2b3fd6997aa04bb6f3da93b01154ce6fc8e799db2/anytree-2.13.0.tar.gz", hash = "sha256:c9d3aa6825fdd06af7ebb05b4ef291d2db63e62bb1f9b7d9b71354be9d362714", size = 48389, upload-time = "2025-04-08T21:06:30.662Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7b/98/f6aa7fe0783e42be3093d8ef1b0ecdc22c34c0d69640dfb37f56925cb141/anytree-2.13.0-py3-none-any.whl", hash = "sha256:4cbcf10df36b1f1cba131b7e487ff3edafc9d6e932a3c70071b5b768bab901ff", size = 45077, upload-time = "2025-04-08T21:06:29.494Z" },
 ]
 
 [[package]]
@@ -449,18 +440,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/46/61/de6cd827efad202d7057d93e0fed9294b96952e188f7384832791c7b2254/click-8.3.0.tar.gz", hash = "sha256:e7b8232224eba16f4ebe410c25ced9f7875cb5f3263ffc93cc3e8da705e229c4", size = 276943, upload-time = "2025-09-18T17:32:23.696Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/db/d3/9dcc0f5797f070ec8edf30fbadfb200e71d9db6b84d211e3b2085a7589a0/click-8.3.0-py3-none-any.whl", hash = "sha256:9b9f285302c6e3064f4330c05f05b81945b2a39544279343e6e7c5f27a9baddc", size = 107295, upload-time = "2025-09-18T17:32:22.42Z" },
-]
-
-[[package]]
-name = "click-default-group"
-version = "1.2.4"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "click" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/ce/edb087fb53de63dad3b36408ca30368f438738098e668b78c87f93cd41df/click_default_group-1.2.4.tar.gz", hash = "sha256:eb3f3c99ec0d456ca6cd2a7f08f7d4e91771bef51b01bdd9580cc6450fe1251e", size = 3505, upload-time = "2023-08-04T07:54:58.425Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2c/1a/aff8bb287a4b1400f69e09a53bd65de96aa5cee5691925b38731c67fc695/click_default_group-1.2.4-py2.py3-none-any.whl", hash = "sha256:9b60486923720e7fc61731bdb32b617039aba820e22e1c88766b1125592eaa5f", size = 4123, upload-time = "2023-08-04T07:54:56.875Z" },
 ]
 
 [[package]]
@@ -1167,18 +1146,6 @@ wheels = [
 ]
 
 [[package]]
-name = "importlib-metadata"
-version = "8.7.0"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "zipp" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/76/66/650a33bd90f786193e4de4b3ad86ea60b53c89b669a5c7be931fac31cdb0/importlib_metadata-8.7.0.tar.gz", hash = "sha256:d13b81ad223b890aa16c5471f2ac3056cf76c5f10f82d6f9292f0b415f389000", size = 56641, upload-time = "2025-04-27T15:29:01.736Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl", hash = "sha256:e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd", size = 27656, upload-time = "2025-04-27T15:29:00.214Z" },
-]
-
-[[package]]
 name = "iniconfig"
 version = "2.1.0"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -1679,15 +1646,6 @@ wheels = [
 ]
 
 [[package]]
-name = "mergedeep"
-version = "1.3.4"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3a/41/580bb4006e3ed0361b8151a01d324fb03f420815446c7def45d02f74c270/mergedeep-1.3.4.tar.gz", hash = "sha256:0096d52e9dad9939c3d975a774666af186eda617e6ca84df4c94dec30004f2a8", size = 4661, upload-time = "2021-02-05T18:55:30.623Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2c/19/04f9b178c2d8a15b076c8b5140708fa6ffc5601fb6f1e975537072df5b2a/mergedeep-1.3.4-py3-none-any.whl", hash = "sha256:70775750742b25c0d8f36c55aed03d24c3384d17c951b3175d898bd778ef0307", size = 6354, upload-time = "2021-02-05T18:55:29.583Z" },
-]
-
-[[package]]
 name = "mongoengine"
 version = "0.29.1"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -1991,17 +1949,16 @@ dependencies = [
 
 [[package]]
 name = "nomad-measurements"
-version = "1.3.1"
+version = "1.3.3"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "fairmat-readers-transmission" },
     { name = "fairmat-readers-xrd" },
     { name = "nomad-lab" },
-    { name = "pynxtools" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5c/4b/846b59cf4756fb31db8485d481a83c0e1f726a034a4b5778491914d6eaec/nomad_measurements-1.3.1.tar.gz", hash = "sha256:c398a3b89335057ec93d71651a0b12e3959e00338e908990b06fdc4ec124a29f", size = 9448526, upload-time = "2025-09-09T15:17:38.639Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bc/1d/a7f3974ee2ae349d1b163c8a9fe66aa1348c4d470ddfa1d36d1befdd60a8/nomad_measurements-1.3.3.tar.gz", hash = "sha256:c59f014251e2c7e19116d026d5d6bebc24652fbd1c9c1ad5d4455e3ccaf58d08", size = 9451675, upload-time = "2025-11-03T15:12:16.121Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/ec/8e0473fe4909d99066b7b1d36f698908469b688316d8087587f1087df53c/nomad_measurements-1.3.1-py3-none-any.whl", hash = "sha256:721f89619014dc1d8f2a7d89bea1b0f92c4e10666c8835a767af507cae9c8612", size = 64253, upload-time = "2025-09-09T15:17:37.071Z" },
+    { url = "https://files.pythonhosted.org/packages/80/04/0fa2cf289669b0d06f16c53709bf0d8fdfbd3f16520759efbdf8d28a7349/nomad_measurements-1.3.3-py3-none-any.whl", hash = "sha256:865bd0a7d4ccd4a5854e067ccbe9d509be2b5840bfece2a2e76559c8dac6db42", size = 67965, upload-time = "2025-11-03T15:12:14.658Z" },
 ]
 
 [[package]]
@@ -2691,33 +2648,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/47/49/bd7e783fb78aaf9bdaa3f88cc238449be5bc5546e930ec98845ef235f809/pymongo-4.15.1-cp312-cp312-win32.whl", hash = "sha256:e5fedea0e7b3747da836cd5f88b0fa3e2ec5a394371f9b6a6b15927cfeb5455d", size = 891175, upload-time = "2025-09-16T16:38:44.658Z" },
     { url = "https://files.pythonhosted.org/packages/2e/28/7de5858bdeaa07ea4b277f9eb06123ea358003659fe55e72e4e7c898b321/pymongo-4.15.1-cp312-cp312-win_amd64.whl", hash = "sha256:330a17c1c89e2c3bf03ed391108f928d5881298c17692199d3e0cdf097a20082", size = 910619, upload-time = "2025-09-16T16:38:46.124Z" },
     { url = "https://files.pythonhosted.org/packages/17/87/c39f4f8415e7c65f8b66413f53a9272211ff7dfe78a5128b27027bf88864/pymongo-4.15.1-cp312-cp312-win_arm64.whl", hash = "sha256:756b7a2a80ec3dd5b89cd62e9d13c573afd456452a53d05663e8ad0c5ff6632b", size = 896229, upload-time = "2025-09-16T16:38:48.563Z" },
-]
-
-[[package]]
-name = "pynxtools"
-version = "0.11.1"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-dependencies = [
-    { name = "anytree" },
-    { name = "ase" },
-    { name = "click" },
-    { name = "click-default-group" },
-    { name = "h5py" },
-    { name = "importlib-metadata" },
-    { name = "lxml" },
-    { name = "mergedeep" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "pint", version = "0.24.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "pint", version = "0.25", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.11'" },
-    { name = "pyyaml" },
-    { name = "toposort" },
-    { name = "xarray", version = "2025.6.1", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.11'" },
-    { name = "xarray", version = "2025.9.0", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.11'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/86/a1/e23d31b68c0dc9579cf2f6ee834d285e205afbb0253419142a08d4015868/pynxtools-0.11.1.tar.gz", hash = "sha256:cdc09b9ec7919dbc6221633f0b4ff7b2fd40e4366738228e6c6c72df977d7111", size = 5352988, upload-time = "2025-08-07T14:42:41.845Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/6d/be4c51b1cdb621708b8eb4331125e9a25282cc2e5caf6b3139dd14ad759a/pynxtools-0.11.1-py3-none-any.whl", hash = "sha256:37547fd78c68dddf690d40b2233ac5660b642283708ea0c34f9ab7a75f0c4623", size = 5719208, upload-time = "2025-08-07T14:42:39.676Z" },
 ]
 
 [[package]]
@@ -3586,15 +3516,6 @@ wheels = [
 ]
 
 [[package]]
-name = "toposort"
-version = "1.10"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/69/19/8e955d90985ecbd3b9adb2a759753a6840da2dff3c569d412b2c9217678b/toposort-1.10.tar.gz", hash = "sha256:bfbb479c53d0a696ea7402601f4e693c97b0367837c8898bc6471adfca37a6bd", size = 11132, upload-time = "2023-02-27T13:59:51.834Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f6/17/57b444fd314d5e1593350b9a31d000e7411ba8e17ce12dc7ad54ca76b810/toposort-1.10-py3-none-any.whl", hash = "sha256:cbdbc0d0bee4d2695ab2ceec97fe0679e9c10eab4b2a87a9372b929e70563a87", size = 8500, upload-time = "2023-02-25T20:07:06.538Z" },
-]
-
-[[package]]
 name = "tornado"
 version = "6.5.2"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
@@ -3953,15 +3874,6 @@ source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages
 sdist = { url = "https://files.pythonhosted.org/packages/39/0d/40df5be1e684bbaecdb9d1e0e40d5d482465de6b00cbb92b84ee5d243c7f/xmltodict-0.13.0.tar.gz", hash = "sha256:341595a488e3e01a85a9d8911d8912fd922ede5fecc4dce437eb4b6c8d037e56", size = 33813, upload-time = "2022-05-08T07:00:04.916Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/94/db/fd0326e331726f07ff7f40675cd86aa804bfd2e5016c727fa761c934990e/xmltodict-0.13.0-py2.py3-none-any.whl", hash = "sha256:aa89e8fd76320154a40d19a0df04a4695fb9dc5ba977cbb68ab3e4eb225e7852", size = 9971, upload-time = "2022-05-08T07:00:02.898Z" },
-]
-
-[[package]]
-name = "zipp"
-version = "3.23.0"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e3/02/0f2892c661036d50ede074e376733dca2ae7c6eb617489437771209d4180/zipp-3.23.0.tar.gz", hash = "sha256:a07157588a12518c9d4034df3fbbee09c814741a33ff63c05fa29d26a2404166", size = 25547, upload-time = "2025-06-08T17:06:39.4Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2e/54/647ade08bf0db230bfea292f893923872fd20be6ac6f53b2b936ba839d75/zipp-3.23.0-py3-none-any.whl", hash = "sha256:071652d6115ed432f5ce1d34c336c0adfd6a884660d1e9712a256d3d3bd4b14e", size = 10276, upload-time = "2025-06-08T17:06:38.034Z" },
 ]
 
 [[package]]
