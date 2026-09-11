@@ -86,7 +86,9 @@ services:
     volumes:
       - ./configs/nomad.yaml:/app/nomad.yaml
       - ./.volumes/fs:/app/.volumes/fs
-    command: python -m celery -A nomad.processing worker -l info -Q celery --max-tasks-per-child 128
+      - ./scripts:/app/scripts:ro
+      - uv_cache:/app/.cache/uv
+    command: ./scripts/run-worker.sh
 
   # nomad app (api + proxy)
   app:
@@ -114,7 +116,9 @@ services:
     volumes:
       - ./configs/nomad.yaml:/app/nomad.yaml
       - ./.volumes/fs:/app/.volumes/fs
-    command: ./run.sh
+      - ./scripts:/app/scripts:ro
+      - uv_cache:/app/.cache/uv
+    command: ./scripts/run.sh
     healthcheck:
       test:
         - "CMD"
@@ -125,7 +129,7 @@ services:
       interval: 10s
       timeout: 10s
       retries: 30
-      start_period: 10s
+      start_period: 60s
 
   # nomad remote tools hub (JupyterHUB, e.g. for AI Toolkit)
   north:
@@ -227,6 +231,8 @@ volumes:
     name: "nomad_oasis_rabbitmq"
   keycloak:
     name: "nomad_oasis_keycloak"
+  uv_cache:
+    name: "nomad_oasis_uv_cache"
 
 networks:
   default:

@@ -128,6 +128,7 @@ ENV UV_CACHE_DIR=/app/.cache/uv
 RUN mkdir -p /app/.cache/uv && chown -R nomad:${UID} /app/.cache
 
 COPY --chown=nomad:${UID} --from=builder /opt/venv /opt/venv
+COPY --chown=nomad:${UID} scripts ./scripts
 COPY --chown=nomad:${UID} scripts/run.sh .
 COPY --chown=nomad:${UID} scripts/run-worker.sh .
 COPY configs/nomad.yaml nomad.yaml

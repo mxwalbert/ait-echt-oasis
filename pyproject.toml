@@ -28,7 +28,7 @@ repository = "https://github.com/mxwalbert/ait-echt-oasis"
 
 [project.optional-dependencies]
 plugins = [
-  "nomad-measurements",
+  "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements.git",
   "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git",
   "nomad-ait-echt-oasis @ git+https://github.com/mxwalbert/nomad-ait-echt-oasis.git",
   # "perovskite-solar-cell-database @ git+https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git@v0.1.1",

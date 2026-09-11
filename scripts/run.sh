@@ -1,5 +1,8 @@
 #!/bin/bash
+set -e
 
-uv pip install --reinstall --no-deps 'nomad-ait-echt-oasis @ git+https://github.com/mxwalbert/nomad-ait-echt-oasis.git'
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+bash "$DIR/install-plugins.sh"
 
-python -m nomad.cli admin run app --with-gui --gunicorn --host 0.0.0.0 $@
+exec python -m nomad.cli admin run app --with-gui --gunicorn --host 0.0.0.0 "$@"
+
