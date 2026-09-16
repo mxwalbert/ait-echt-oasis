@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Reinstalling NOMAD Oasis plugins and readers..."
-uv pip install --reinstall \
+uv pip install --reinstall --no-deps \
   'fairmat-readers-xrd' \
   'fairmat-readers-transmission' \
   'nomad-ait-echt-oasis @ git+https://github.com/mxwalbert/nomad-ait-echt-oasis.git' \
