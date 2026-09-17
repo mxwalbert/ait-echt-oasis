@@ -6,30 +6,12 @@ oasis:
   is_oasis: true
   uses_central_user_management: true
 
-north:
-  jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
-  tools:
-    options:
-      jupyter:
-        image: ghcr.io/mxwalbert/ait-echt-oasis/jupyter:main
-
-meta:
-  deployment: 'ait-echt-oasis'
-  deployment_url: 'localhost/api'
-  maintainer_email: 'echt-oasis@ait.ac.at'
-
-logstash:
-  enabled: false
-
-mongo:
-  db_name: nomad_oasis_v1
-
-elastic:
-  entries_index: nomad_oasis_entries_v1
-  materials_index: nomad_oasis_materials_v1
-
 plugins:
   entry_points:
+    options:
+      nomad_north_jupyter.north_tools:jupyter:
+        north_tool:
+          image: ghcr.io/fairmat-nfdi/nomad-north-jupyter:latest
     exclude:
       - apps/2_theory/1_calculations
       - apps/2_theory/2_materials
@@ -41,3 +23,25 @@ plugins:
       - example_uploads/2_tutorials/1_rdm_tutorial
       - example_uploads/2_tutorials/2_cow_tutorial
       - pynxtools.nomad.entrypoints:simple_nexus_example
+
+meta:
+  deployment: 'ait-echt-oasis'
+  deployment_url: 'localhost/api'
+  maintainer_email: 'echt-oasis@ait.ac.at'
+
+logstash:
+  enabled: false
+
+temporal:
+  enabled: true
+
+mongo:
+  db_name: nomad_oasis_v1
+
+elastic:
+  entries_index: nomad_oasis_entries_v1
+  materials_index: nomad_oasis_materials_v1
+
+north:
+  enabled: true
+  enable_new_hub_api: true

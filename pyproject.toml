@@ -18,15 +18,17 @@ name = "ait-echt-oasis"
 description = "The NOMAD Oasis deployment for the Energy Conversion and Hydrogen Technologies group of the Austrian Institute of Technology GmbH"
 dynamic = ["version"]
 readme = "README.md"
-requires-python = ">=3.10, <3.13"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab[parsing, infrastructure]>=1.4.3", "setuptools"]
-
+dependencies = [
+  "nomad-lab[infrastructure]==1.4.3",
+]
 
 [project.urls]
 repository = "https://github.com/mxwalbert/ait-echt-oasis"
 
 [project.optional-dependencies]
+# Add your plugins to the list below.
 plugins = [
   "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements.git",
   "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git",
@@ -65,8 +67,10 @@ jupyter = [
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.4.3"]
 
 [tool.uv]
-constraint-dependencies = ["hyperspy>=1.7.6"]
-prerelease = "if-necessary"
+extra-index-url = [
+  "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple",
+]
+prerelease = "if-necessary-or-explicit"
 
 [tool.setuptools.packages.find]
 exclude = ["gui*", "docs*", "config*"]
