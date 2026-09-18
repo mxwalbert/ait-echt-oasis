@@ -30,6 +30,7 @@ repository = "https://github.com/mxwalbert/ait-echt-oasis"
 [project.optional-dependencies]
 # Add your plugins to the list below.
 plugins = [
+  "nomad-gui",
   "nomad-north-jupyter>=0.2.6",
   "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements.git",
   "nomad-material-processing @ git+https://github.com/FAIRmat-NFDI/nomad-material-processing.git",
