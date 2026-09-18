@@ -128,7 +128,6 @@ services:
   worker:
     restart: unless-stopped
     image: ghcr.io/mxwalbert/ait-echt-oasis:main
-    container_name: nomad_oasis_worker
     platform: linux/amd64
     environment:
       NOMAD_SERVICE: nomad_oasis_worker
@@ -304,6 +303,8 @@ services:
     image: ghcr.io/mxwalbert/ait-echt-oasis:main
     platform: linux/amd64
     container_name: nomad_oasis_north
+    user: "1000:988"
+    command: python -m nomad.cli admin run hub
     environment:
       NOMAD_API_URL: "http://app:8000/nomad-oasis/api/v1"
       DOCKER_PREFIX: "nomad-oasis-north"
